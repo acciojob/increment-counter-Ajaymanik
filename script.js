@@ -1,7 +1,0 @@
-let count = 0 ;
-document.getElementById("incrementBtn").addEventListener("click" , function() {
-	alert("Un-incremented Value: "+count);
-	count++;
-	document.getElementById("counter").textContent = count ;
-	
-});

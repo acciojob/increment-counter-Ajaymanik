@@ -7,9 +7,17 @@
 </head>
 
 <body>
- <p id="counter">0</p>
+    <p id="counter">0</p>
     <button id="incrementBtn">Increment</button>
-	<script type="text/javascript" src="./script.js">
+
+    <script>
+        let count = 0;
+        document.getElementById("incrementBtn").addEventListener("click", function() {
+            alert("Un-incremented Value: " + count);
+            count++;
+            document.getElementById("counter").textContent = count;
+        });
+    </script>
 </script>
 
 </body>
