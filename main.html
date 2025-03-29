@@ -1,30 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Your CSS links or styles go here -->
 </head>
 <body>
-    <!-- Counter Display -->
     <p id="counter">0</p>
-    
-    <!-- Increment Button -->
     <button id="incrementBtn">Increment</button>
 
-    <!-- Your JavaScript goes here -->
     <script>
-        // Initialize count variable
         let count = 0;
+        const incrementBtn = document.getElementById("incrementBtn");
+        const counterElement = document.getElementById("counter");
 
-        // Add event listener to the button
-        document.getElementById("incrementBtn").addEventListener("click", function() {
-            // Show alert with current count
+        incrementBtn.addEventListener("click", function() {
             alert("Un-incremented Value: " + count);
-            
-            // Increment count
             count++;
-            
-            // Update count display
-            document.getElementById("counter").textContent = count;
+            counterElement.textContent = count;
         });
     </script>
 </body>
